@@ -31,6 +31,7 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 `;
 
 const ItemText = styled.div`
@@ -77,8 +78,8 @@ const Buttons = styled.div``;
 
 const DownArrow = styled.img`
   height: 40px;
-  animation: animateDown infinite 1.5s;
-  overflow-x: hidden;
+  /* animation: animateDown infinite 1.5s; */
+  overflow: hidden;
 
   @keyframes animateDown {
     0%,
@@ -89,10 +90,10 @@ const DownArrow = styled.img`
       transform: translateY(0);
     }
     40% {
-      transform: translateY(5px) rotateZ(10deg);
+      transform: translateY(5px);
     }
     60% {
-      transform: translateY(3px) rotateZ(-10deg);
+      transform: translateY(3px);
     }
   }
 `;
